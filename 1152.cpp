@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>//dfs
 using namespace std;
 int n, num[21], s = 0, minh = 6300, die[21];
 int gid(int i)
