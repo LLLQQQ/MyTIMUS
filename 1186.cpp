@@ -76,6 +76,7 @@ int main()
                 else if (test[k] == ')')
                 {
                     afterNum++;
+                    //cout << tmpChem << " " << beforeNum << " " << afterNum << endl;
                     if (afterNum > beforeNum)
                     {
                         k++;
@@ -90,6 +91,10 @@ int main()
                             tmpNum = 1;
                         }
                         minusNum *= tmpNum;
+                    }
+                    else
+                    {
+                        k++;
                     }
                 }
                 else
@@ -113,10 +118,6 @@ int main()
             //+minusNum
             chemCount[j] += minusNum;
         }
-    }
-    for (i = 0; i < chemNum; i++)
-    {
-        cout << chem[i] << " " << chemCount[i] << endl;
     }
     cin >> s;
     for (x = 0; x < s; x++)
@@ -201,6 +202,10 @@ int main()
                                 tmpNum = 1;
                             }
                             minusNum *= tmpNum;
+                        }
+                        else
+                        {
+                            k++;
                         }
                     }
                     else
